@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>US Mortgage Loan Finder — FHA, VA, Conventional, DSCR & More | Tabutility</title>
+<meta name="description" content="Find the right US mortgage loan type for your situation — FHA, VA, USDA, Conventional, DSCR, Jumbo. Get your full monthly payment with property tax by state, insurance, and PMI. Free, instant, no sign-up."/>
+<link rel="canonical" href="https://us-mortgage-loan-finder.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://us-mortgage-loan-finder.tabutility.com/"/>
+<meta property="og:title" content="US Mortgage Loan Finder — Which Loan Type Is Right for You?"/>
+<meta property="og:description" content="Answer 5 questions. See which loan types you qualify for and your full monthly payment — principal, interest, property tax by state, insurance, and PMI."/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="robots" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>"/>
+<meta name="theme-color" content="#0f172a"/>
+<script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"US Mortgage Loan Finder","url":"https://us-mortgage-loan-finder.tabutility.com/","description":"Find the right US mortgage loan type — FHA, VA, USDA, Conventional, DSCR, Jumbo — and see your full monthly PITI payment with state property tax.","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between FHA and conventional loans?","acceptedAnswer":{"@type":"Answer","text":"FHA loans are government-backed and allow lower credit scores (580+) and down payments as low as 3.5%. Conventional loans require 620+ credit but avoid the lifetime mortgage insurance premium FHA charges when down payment is below 10%."}},{"@type":"Question","name":"What is a DSCR loan?","acceptedAnswer":{"@type":"Answer","text":"A DSCR (Debt Service Coverage Ratio) loan qualifies borrowers based on rental income from the investment property rather than personal income. It's designed for real estate investors who may have complex tax returns."}},{"@type":"Question","name":"What credit score do I need for a VA loan?","acceptedAnswer":{"@type":"Answer","text":"The VA itself sets no minimum, but most lenders require 620+. VA loans offer 0% down payment and no monthly PMI for eligible veterans and active-duty military."}},{"@type":"Question","name":"What is included in the monthly PITI payment?","acceptedAnswer":{"@type":"Answer","text":"PITI stands for Principal, Interest, Taxes, and Insurance. The monthly payment includes your loan principal and interest, property tax (varies by state), homeowner's insurance, and PMI or MIP if your down payment is below 20%."}},{"@type":"Question","name":"Which states have the highest property taxes?","acceptedAnswer":{"@type":"Answer","text":"New Jersey (2.47%), Illinois (2.27%), New Hampshire (2.09%), Connecticut (2.14%), and Vermont (1.90%) have the highest effective property tax rates. Hawaii (0.29%), Alabama (0.40%), and Colorado (0.50%) are among the lowest."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav .brand{color:#fff;font-weight:700;font-size:18px;text-decoration:none}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}
+nav a:hover{color:#f1f5f9}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:720px;margin:0 auto;padding:0 16px 60px}
+h1{font-size:24px;font-weight:800;color:#f1f5f9;margin:28px 0 6px;text-align:center}
+.subtitle{color:#94a3b8;font-size:14px;text-align:center;margin-bottom:24px}
+
+/* Progress */
+.progress{display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:28px}
+.step-dot{width:32px;height:32px;border-radius:50%;border:2px solid #334155;background:#1e293b;color:#64748b;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;transition:.2s;flex-shrink:0}
+.step-dot.active{border-color:#4f46e5;background:#4f46e5;color:#fff}
+.step-dot.done{border-color:#22c55e;background:#22c55e;color:#fff}
+.step-line{width:32px;height:2px;background:#334155;flex-shrink:0}
+.step-line.done{background:#22c55e}
+
+/* Card */
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:16px}
+.card-title{font-size:16px;font-weight:700;color:#f1f5f9;margin-bottom:6px}
+.card-hint{font-size:13px;color:#64748b;margin-bottom:20px}
+
+/* Labels & inputs */
+label{display:block;font-size:12px;font-weight:700;color:#94a3b8;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;margin-top:18px}
+label:first-of-type{margin-top:0}
+.input-wrap{position:relative}
+.input-prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:15px;color:#64748b}
+input[type=number],input[type=text],select{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;padding:11px 14px;color:#f1f5f9;font-size:15px;outline:none;-moz-appearance:textfield;transition:border-color .2s}
+input.has-prefix{padding-left:28px}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+input:focus,select:focus{border-color:#818cf8}
+select{appearance:none;cursor:pointer}
+select option{background:#1e293b}
+
+/* Option cards (choice buttons) */
+.opts{display:grid;gap:10px;margin-top:4px}
+.opts.cols2{grid-template-columns:1fr 1fr}
+.opts.cols3{grid-template-columns:repeat(3,1fr)}
+.opt{background:#0f172a;border:1.5px solid #334155;border-radius:10px;padding:13px 14px;cursor:pointer;transition:.2s;text-align:left}
+.opt:hover{border-color:#4f46e5}
+.opt.sel{border-color:#4f46e5;background:rgba(79,70,229,.12)}
+.opt-icon{font-size:22px;margin-bottom:6px}
+.opt-label{font-size:13px;font-weight:700;color:#f1f5f9;display:block}
+.opt-sub{font-size:11px;color:#64748b;margin-top:2px}
+
+/* Buttons */
+.btn-row{display:flex;gap:10px;margin-top:20px}
+.btn{flex:1;background:#4f46e5;color:#fff;border:none;border-radius:8px;padding:13px 24px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:#4338ca}
+.btn.back{background:#1e293b;border:1px solid #334155;color:#94a3b8}
+.btn.back:hover{background:#334155;color:#f1f5f9}
+
+/* Results */
+.res-header{text-align:center;margin:28px 0 20px}
+.res-header h2{font-size:20px;font-weight:800;color:#f1f5f9}
+.res-header p{color:#94a3b8;font-size:13px;margin-top:6px}
+
+.loan-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.loan-card{background:#1e293b;border:1.5px solid #334155;border-radius:12px;padding:16px;cursor:pointer;transition:.2s;position:relative}
+.loan-card:hover{border-color:#4f46e5}
+.loan-card.active{border-color:#4f46e5;background:rgba(79,70,229,.1)}
+.loan-card.no{opacity:.5;cursor:default}
+.loan-card.no:hover{border-color:#334155}
+.loan-badge{position:absolute;top:10px;right:10px;font-size:10px;font-weight:800;padding:3px 8px;border-radius:99px;letter-spacing:.5px}
+.badge-yes{background:#dcfce7;color:#166534}
+.badge-best{background:#dbeafe;color:#1e40af}
+.badge-partial{background:#fef9c3;color:#854d0e}
+.badge-no{background:#1e293b;color:#475569;border:1px solid #334155}
+.loan-name{font-size:15px;font-weight:800;color:#f1f5f9;margin-bottom:3px}
+.loan-min{font-size:11px;color:#64748b}
+
+/* PITI breakdown */
+.piti-card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:22px;margin-bottom:16px}
+.piti-title{font-size:15px;font-weight:800;color:#f1f5f9;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.piti-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #1e293b}
+.piti-row:last-child{border-bottom:none}
+.piti-label{font-size:13px;color:#94a3b8}
+.piti-label small{display:block;font-size:11px;color:#475569;margin-top:2px}
+.piti-val{font-size:15px;font-weight:700;color:#f1f5f9}
+.piti-total{display:flex;justify-content:space-between;align-items:center;background:#0f172a;border:1.5px solid #4f46e5;border-radius:10px;padding:16px;margin-top:12px}
+.piti-total-label{font-size:14px;font-weight:700;color:#a5b4fc}
+.piti-total-val{font-size:28px;font-weight:900;color:#4f46e5}
+
+.rate-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px}
+.rate-card{background:#1e293b;border:1px solid #334155;border-radius:10px;padding:12px;text-align:center}
+.rate-num{font-size:18px;font-weight:800;color:#f1f5f9}
+.rate-lbl{font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+
+/* Rate adjuster */
+.adjuster{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:18px;margin-bottom:16px}
+.adj-title{font-size:13px;font-weight:700;color:#94a3b8;margin-bottom:12px;text-transform:uppercase;letter-spacing:.05em}
+.adj-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.adj-item label{margin-top:0;font-size:11px}
+.adj-item input{font-size:14px;padding:9px 12px}
+
+/* SEO content */
+.seo{margin-top:40px;color:#94a3b8;font-size:14px;line-height:1.7}
+.seo h2{font-size:18px;font-weight:700;color:#f1f5f9;margin:28px 0 10px}
+.seo h3{font-size:15px;font-weight:700;color:#e2e8f0;margin:18px 0 8px}
+.seo p{margin-bottom:12px}
+.seo ul{margin:8px 0 12px 20px}
+.seo ul li{margin-bottom:6px}
+.tax-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:12px}
+.tax-table th{background:#1e293b;color:#94a3b8;padding:8px 10px;text-align:left;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.tax-table td{padding:7px 10px;border-bottom:1px solid #1e293b;color:#e2e8f0}
+.tax-table tr:nth-child(even) td{background:#0f172a}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tag{background:#1e293b;border:1px solid #334155;color:#94a3b8;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:600}
+
+.hidden{display:none}
+@media(max-width:540px){
+  .loan-grid{grid-template-columns:1fr}
+  .opts.cols3{grid-template-columns:1fr 1fr}
+  .rate-row{grid-template-columns:1fr 1fr}
+  .adj-grid{grid-template-columns:1fr}
+  .btn-row{flex-direction:column}
+}
+</style>
+<style id="tabutility-brand-v2">
+.btn,.toggle-btn.active,button.active{color:#fff!important}
+nav .brand{color:#fff}
+nav a:hover{color:#818cf8}
+input:focus,select:focus,textarea:focus{border-color:#818cf8!important}
+ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe,.ad-container iframe{visibility:hidden!important}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner" style="min-height:90px"><ins class="adsbygoogle" style="display:block;min-height:90px" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div id="app">
+  <h1>🏡 US Mortgage Loan Finder</h1>
+  <p class="subtitle">Answer 5 questions — see which loan types you qualify for and your full monthly payment</p>
+
+  <!-- PROGRESS -->
+  <div class="progress" id="progressBar">
+    <div class="step-dot active" id="sd1">1</div>
+    <div class="step-line" id="sl1"></div>
+    <div class="step-dot" id="sd2">2</div>
+    <div class="step-line" id="sl2"></div>
+    <div class="step-dot" id="sd3">3</div>
+    <div class="step-line" id="sl3"></div>
+    <div class="step-dot" id="sd4">4</div>
+    <div class="step-line" id="sl4"></div>
+    <div class="step-dot" id="sd5">5</div>
+  </div>
+
+  <!-- STEP 1: Price + State -->
+  <div id="step1" class="card">
+    <div class="card-title">Property details</div>
+    <div class="card-hint">Enter the purchase price and the state where the property is located.</div>
+    <label>Purchase Price</label>
+    <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="price" class="has-prefix" placeholder="400000" min="50000" step="5000" value="400000"/></div>
+    <label>Property State</label>
+    <select id="state"></select>
+    <div class="btn-row"><button class="btn" onclick="goStep(2)">Next →</button></div>
+  </div>
+
+  <!-- STEP 2: Down Payment -->
+  <div id="step2" class="card hidden">
+    <div class="card-title">Down payment</div>
+    <div class="card-hint">How much are you putting down? Minimum varies by loan type.</div>
+    <label>Down Payment Amount</label>
+    <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="downAmt" class="has-prefix" placeholder="80000" min="0" step="1000" value="80000" oninput="syncDown('amt')"/></div>
+    <label>Or as a Percentage</label>
+    <div class="input-wrap"><input type="number" id="downPct" placeholder="20" min="0" max="100" step="0.5" value="20" oninput="syncDown('pct')" style="padding-left:14px"/><span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#64748b">%</span></div>
+    <div id="downNote" style="font-size:12px;color:#94a3b8;margin-top:10px"></div>
+    <div class="btn-row">
+      <button class="btn back" onclick="goStep(1)">← Back</button>
+      <button class="btn" onclick="goStep(3)">Next →</button>
+    </div>
+  </div>
+
+  <!-- STEP 3: Credit Score -->
+  <div id="step3" class="card hidden">
+    <div class="card-title">Credit score range</div>
+    <div class="card-hint">Select your approximate FICO score. This determines which loans you qualify for and your PMI rate.</div>
+    <div class="opts">
+      <div class="opt" onclick="pick('credit','excellent',this)">
+        <div class="opt-label">740 + &nbsp; Excellent</div>
+        <div class="opt-sub">Best rates, lowest PMI, all loan types</div>
+      </div>
+      <div class="opt" onclick="pick('credit','good',this)">
+        <div class="opt-label">680 – 739 &nbsp; Good</div>
+        <div class="opt-sub">Most loans available, standard PMI</div>
+      </div>
+      <div class="opt" onclick="pick('credit','fair',this)">
+        <div class="opt-label">620 – 679 &nbsp; Fair</div>
+        <div class="opt-sub">Conventional & FHA available, higher PMI</div>
+      </div>
+      <div class="opt" onclick="pick('credit','low580',this)">
+        <div class="opt-label">580 – 619 &nbsp; Below Average</div>
+        <div class="opt-sub">FHA with 3.5% down; VA if eligible</div>
+      </div>
+      <div class="opt" onclick="pick('credit','low500',this)">
+        <div class="opt-label">500 – 579 &nbsp; Poor</div>
+        <div class="opt-sub">FHA with 10% down; VA if eligible</div>
+      </div>
+      <div class="opt" onclick="pick('credit','under500',this)">
+        <div class="opt-label">Below 500</div>
+        <div class="opt-sub">Most conventional lenders will decline</div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn back" onclick="goStep(2)">← Back</button>
+      <button class="btn" onclick="goStep(4)">Next →</button>
+    </div>
+  </div>
+
+  <!-- STEP 4: Property Use -->
+  <div id="step4" class="card hidden">
+    <div class="card-title">How will you use the property?</div>
+    <div class="card-hint">This affects which loan programs you can use — VA and FHA require primary residence.</div>
+    <div class="opts cols3">
+      <div class="opt" onclick="pick('use','primary',this)">
+        <div class="opt-icon">🏠</div>
+        <div class="opt-label">Primary Home</div>
+        <div class="opt-sub">You'll live here full time</div>
+      </div>
+      <div class="opt" onclick="pick('use','investment',this)">
+        <div class="opt-icon">🏘️</div>
+        <div class="opt-label">Investment / Rental</div>
+        <div class="opt-sub">Buy-to-rent or fix-and-flip</div>
+      </div>
+      <div class="opt" onclick="pick('use','vacation',this)">
+        <div class="opt-icon">🏖️</div>
+        <div class="opt-label">Vacation / Second</div>
+        <div class="opt-sub">Part-time / holiday use</div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn back" onclick="goStep(3)">← Back</button>
+      <button class="btn" onclick="goStep(5)">Next →</button>
+    </div>
+  </div>
+
+  <!-- STEP 5: Income Type -->
+  <div id="step5" class="card hidden">
+    <div class="card-title">Income situation</div>
+    <div class="card-hint">How you earn income affects which loan types are available to you.</div>
+    <div class="opts cols2">
+      <div class="opt" onclick="pick('income','w2',this)">
+        <div class="opt-icon">💼</div>
+        <div class="opt-label">W-2 Employee</div>
+        <div class="opt-sub">Regular salary or wages</div>
+      </div>
+      <div class="opt" onclick="pick('income','selfemployed',this)">
+        <div class="opt-icon">🧾</div>
+        <div class="opt-label">Self-Employed</div>
+        <div class="opt-sub">1099, LLC, S-Corp etc.</div>
+      </div>
+      <div class="opt" onclick="pick('income','military',this)">
+        <div class="opt-icon">🎖️</div>
+        <div class="opt-label">Veteran / Military</div>
+        <div class="opt-sub">Active duty, veteran, or surviving spouse</div>
+      </div>
+      <div class="opt" onclick="pick('income','rural',this)">
+        <div class="opt-icon">🌾</div>
+        <div class="opt-label">Rural Area Buyer</div>
+        <div class="opt-sub">Property in USDA-eligible rural area</div>
+      </div>
+      <div class="opt" onclick="pick('income','investor',this)">
+        <div class="opt-icon">📊</div>
+        <div class="opt-label">Real Estate Investor</div>
+        <div class="opt-sub">Rental income qualifies via DSCR</div>
+      </div>
+      <div class="opt" onclick="pick('income','other',this)">
+        <div class="opt-icon">💰</div>
+        <div class="opt-label">Other / Mixed</div>
+        <div class="opt-sub">Retirement, dividends, etc.</div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn back" onclick="goStep(4)">← Back</button>
+      <button class="btn" onclick="showResults()">See My Options →</button>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="results" class="hidden">
+    <div class="res-header">
+      <h2 id="res-title">Your Loan Options</h2>
+      <p id="res-sub"></p>
+    </div>
+
+    <div class="loan-grid" id="loanGrid"></div>
+
+    <!-- Rate / HOA adjuster -->
+    <div class="adjuster">
+      <div class="adj-title">Adjust Assumptions</div>
+      <div class="adj-grid">
+        <div class="adj-item">
+          <label>Interest Rate (%)</label>
+          <input type="number" id="adjRate" step="0.05" min="1" max="20" value="6.8" oninput="renderPITI()"/>
+        </div>
+        <div class="adj-item">
+          <label>Loan Term (years)</label>
+          <select id="adjTerm" onchange="renderPITI()">
+            <option value="30" selected>30 years</option>
+            <option value="20">20 years</option>
+            <option value="15">15 years</option>
+            <option value="10">10 years</option>
+          </select>
+        </div>
+        <div class="adj-item">
+          <label>Monthly HOA ($)</label>
+          <input type="number" id="adjHOA" step="25" min="0" value="0" oninput="renderPITI()"/>
+        </div>
+        <div class="adj-item">
+          <label>Insurance ($/yr, optional)</label>
+          <input type="number" id="adjIns" step="100" min="0" placeholder="Auto" oninput="renderPITI()"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- PITI breakdown -->
+    <div class="piti-card" id="pitiCard">
+      <div class="piti-title" id="pitiTitle">📋 Monthly Payment Breakdown</div>
+      <div id="pitiRows"></div>
+      <div class="piti-total">
+        <div class="piti-total-label">TOTAL MONTHLY PAYMENT</div>
+        <div class="piti-total-val" id="pitiTotal">—</div>
+      </div>
+    </div>
+
+    <!-- Key stats -->
+    <div class="rate-row" id="keyStats"></div>
+
+    <div style="text-align:center;margin:16px 0">
+      <button class="btn back" onclick="restart()" style="display:inline-block;width:auto;padding:10px 24px;font-size:13px">← Start Over</button>
+    </div>
+
+    <!-- SEO content -->
+    <div class="seo">
+      <h2>US Mortgage Loan Types Explained</h2>
+      <h3>Conventional Loans</h3>
+      <p>Conventional loans are not backed by the government. They require a minimum 620 credit score and as little as 3% down. With 20% or more down, you avoid PMI entirely. Most conforming conventional loans must stay at or below the 2024 loan limit of <strong>$766,550</strong> (higher in certain high-cost counties).</p>
+      <h3>FHA Loans</h3>
+      <p>FHA loans are backed by the Federal Housing Administration and are designed for buyers with lower credit scores or smaller down payments. You can qualify with 580+ credit and just 3.5% down, or with 500–579 credit if you put 10% down. FHA loans require an upfront mortgage insurance premium (1.75% of the loan, usually financed) plus an annual MIP of ~0.55%. The 2024 baseline loan limit is $498,257.</p>
+      <h3>VA Loans</h3>
+      <p>VA loans are available to eligible veterans, active-duty service members, and surviving spouses. They offer 0% down payment and no monthly PMI — making them the most powerful loan type for those who qualify. A one-time VA funding fee (typically 2.15% for first use, 0% down) is charged instead of PMI, and can be financed into the loan.</p>
+      <h3>USDA Loans</h3>
+      <p>USDA loans are backed by the US Department of Agriculture for properties in designated rural and suburban areas. They offer 0% down and low rates. Borrowers must meet income limits (typically 115% of area median income). There's a 1% upfront guarantee fee and 0.35% annual fee.</p>
+      <h3>DSCR Loans</h3>
+      <p>Debt Service Coverage Ratio loans are designed for real estate investors. Instead of verifying personal income, lenders check whether the property's rental income covers the mortgage payment (typically requiring a DSCR of 1.0–1.25). They usually require 20–25% down and 680+ credit.</p>
+      <h3>Jumbo Loans</h3>
+      <p>Jumbo loans exceed the conforming loan limit ($766,550 in most areas). They require stricter qualifications — typically 700+ credit, 10–20% down, and documented reserves of 6–12 months of payments. Rates are usually slightly higher than conforming loans.</p>
+      <h3>Bank Statement Loans (Non-QM)</h3>
+      <p>For self-employed borrowers who can't show traditional W-2 income, bank statement loans use 12–24 months of personal or business bank statements to verify income. They typically require 10–20% down and 620+ credit.</p>
+
+      <h2>Property Tax Rates by State</h2>
+      <p>Property tax is a major component of your monthly payment and varies dramatically by state. These are effective average property tax rates for 2024 (source: Tax Foundation).</p>
+      <table class="tax-table">
+        <tr><th>State</th><th>Eff. Rate</th><th>Monthly Tax on $400k Home</th></tr>
+        <tr><td>New Jersey</td><td>2.47%</td><td>$823</td></tr>
+        <tr><td>Illinois</td><td>2.27%</td><td>$757</td></tr>
+        <tr><td>Connecticut</td><td>2.14%</td><td>$713</td></tr>
+        <tr><td>New Hampshire</td><td>2.09%</td><td>$697</td></tr>
+        <tr><td>Vermont</td><td>1.90%</td><td>$633</td></tr>
+        <tr><td>Wisconsin</td><td>1.85%</td><td>$617</td></tr>
+        <tr><td>Texas</td><td>1.80%</td><td>$600</td></tr>
+        <tr><td>New York</td><td>1.73%</td><td>$577</td></tr>
+        <tr><td>Nebraska</td><td>1.61%</td><td>$537</td></tr>
+        <tr><td>Ohio</td><td>1.62%</td><td>$540</td></tr>
+        <tr><td>Florida</td><td>0.89%</td><td>$297</td></tr>
+        <tr><td>California</td><td>0.75%</td><td>$250</td></tr>
+        <tr><td>Colorado</td><td>0.50%</td><td>$167</td></tr>
+        <tr><td>Hawaii</td><td>0.29%</td><td>$97</td></tr>
+      </table>
+
+      <h2>What is PITI?</h2>
+      <p>PITI stands for <strong>Principal, Interest, Taxes, and Insurance</strong> — the four components of a typical monthly mortgage payment:</p>
+      <ul>
+        <li><strong>Principal</strong> — the portion of each payment that reduces your loan balance</li>
+        <li><strong>Interest</strong> — the cost of borrowing, calculated on your remaining balance</li>
+        <li><strong>Taxes</strong> — property taxes, usually collected monthly and held in escrow by the lender</li>
+        <li><strong>Insurance</strong> — homeowner's insurance, also typically escrowed</li>
+      </ul>
+      <p>Many lenders also add <strong>PMI</strong> (private mortgage insurance) or <strong>MIP</strong> (FHA mortgage insurance) if your down payment is below 20%, making the full acronym PITIA or PITIMI.</p>
+
+      <div class="tag-row">
+        <span class="tag">FHA loan calculator</span>
+        <span class="tag">VA loan calculator</span>
+        <span class="tag">DSCR loan</span>
+        <span class="tag">mortgage pre-qualification</span>
+        <span class="tag">PITI calculator</span>
+        <span class="tag">property tax by state</span>
+        <span class="tag">PMI calculator</span>
+        <span class="tag">first-time home buyer</span>
+        <span class="tag">jumbo loan</span>
+        <span class="tag">USDA loan</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State tax rates (effective, Tax Foundation 2024) ──
+const STATE_TAX = {
+  AL:0.40,AK:1.04,AZ:0.62,AR:0.62,CA:0.75,CO:0.50,CT:2.14,DE:0.57,
+  FL:0.89,GA:0.83,HI:0.29,ID:0.69,IL:2.27,IN:0.85,IA:1.57,KS:1.41,
+  KY:0.80,LA:0.55,ME:1.36,MD:1.09,MA:1.23,MI:1.54,MN:1.12,MS:0.65,
+  MO:0.97,MT:0.84,NE:1.61,NV:0.59,NH:2.09,NJ:2.47,NM:0.66,NY:1.73,
+  NC:0.80,ND:0.98,OH:1.62,OK:0.85,OR:0.97,PA:1.58,RI:1.53,SC:0.57,
+  SD:1.22,TN:0.67,TX:1.80,UT:0.58,VT:1.90,VA:0.87,WA:1.06,WV:0.59,
+  WI:1.85,WY:0.61,DC:0.56
+};
+const STATES = [
+  ['AL','Alabama'],['AK','Alaska'],['AZ','Arizona'],['AR','Arkansas'],['CA','California'],
+  ['CO','Colorado'],['CT','Connecticut'],['DE','Delaware'],['DC','Washington DC'],
+  ['FL','Florida'],['GA','Georgia'],['HI','Hawaii'],['ID','Idaho'],['IL','Illinois'],
+  ['IN','Indiana'],['IA','Iowa'],['KS','Kansas'],['KY','Kentucky'],['LA','Louisiana'],
+  ['ME','Maine'],['MD','Maryland'],['MA','Massachusetts'],['MI','Michigan'],['MN','Minnesota'],
+  ['MS','Mississippi'],['MO','Missouri'],['MT','Montana'],['NE','Nebraska'],['NV','Nevada'],
+  ['NH','New Hampshire'],['NJ','New Jersey'],['NM','New Mexico'],['NY','New York'],
+  ['NC','North Carolina'],['ND','North Dakota'],['OH','Ohio'],['OK','Oklahoma'],['OR','Oregon'],
+  ['PA','Pennsylvania'],['RI','Rhode Island'],['SC','South Carolina'],['SD','South Dakota'],
+  ['TN','Tennessee'],['TX','Texas'],['UT','Utah'],['VT','Vermont'],['VA','Virginia'],
+  ['WA','Washington'],['WV','West Virginia'],['WI','Wisconsin'],['WY','Wyoming']
+];
+
+// ── Loan definitions ──
+const LOANS = {
+  conventional:{name:'Conventional',emoji:'🏛️',color:'#4f46e5',minDown:3,minCredit:'fair',
+    note:'620+ credit · 3% min down · no lifetime MIP',
+    rateDefault:6.8,limits:'No income restriction'},
+  fha:{name:'FHA',emoji:'🏅',color:'#0891b2',minDown:3.5,minCredit:'low580',
+    note:'580+ credit · 3.5% down · MIP required',
+    rateDefault:6.5,limits:'Loan limit $498,257 (2024)'},
+  va:{name:'VA',emoji:'🎖️',color:'#15803d',minDown:0,minCredit:'fair',
+    note:'Veterans & military · 0% down · no PMI',
+    rateDefault:6.3,limits:'No loan limit for full entitlement'},
+  usda:{name:'USDA',emoji:'🌾',color:'#b45309',minDown:0,minCredit:'fair',
+    note:'Rural areas · 0% down · income limits apply',
+    rateDefault:6.5,limits:'Rural/suburban areas only'},
+  dscr:{name:'DSCR',emoji:'📊',color:'#7c3aed',minDown:20,minCredit:'good',
+    note:'Investment property · no income docs · 680+ credit',
+    rateDefault:7.5,limits:'Rental income qualifies'},
+  jumbo:{name:'Jumbo',emoji:'🏰',color:'#be185d',minDown:10,minCredit:'good',
+    note:'Loan > $766,550 · 700+ credit · 10% min down',
+    rateDefault:7.0,limits:'Above conforming limit'},
+  bankstatement:{name:'Bank Statement',emoji:'🧾',color:'#0f766e',minDown:10,minCredit:'fair',
+    note:'Self-employed · 12-24 mo bank statements · 620+ credit',
+    rateDefault:7.8,limits:'Non-QM lenders only'}
+};
+
+// ── App state ──
+const S = {price:400000,state:'TX',credit:'excellent',use:'primary',income:'w2',downAmt:80000,downPct:20};
+let activeLoan = null;
+
+// ── Build state dropdown ──
+const sel = document.getElementById('state');
+STATES.forEach(([code,name])=>{
+  const o = document.createElement('option');
+  o.value=code; o.textContent=`${name} (${(STATE_TAX[code]||1).toFixed(2)}% avg tax)`;
+  if(code==='TX') o.selected=true;
+  sel.appendChild(o);
+});
+
+// ── Helpers ──
+function fmt(n){return '$'+Math.round(n).toLocaleString();}
+function goStep(n){
+  if(n===2){S.price=+document.getElementById('price').value||400000;S.state=document.getElementById('state').value;}
+  [1,2,3,4,5].forEach(i=>{
+    document.getElementById('step'+i).classList.add('hidden');
+    const dot=document.getElementById('sd'+i);
+    if(i<n){dot.className='step-dot done';dot.textContent='✓';}
+    else if(i===n){dot.className='step-dot active';dot.textContent=i;}
+    else{dot.className='step-dot';dot.textContent=i;}
+    if(i<5){document.getElementById('sl'+i).className='step-line'+(i<n?' done':'');}
+  });
+  document.getElementById('step'+n).classList.remove('hidden');
+  document.getElementById('results').classList.add('hidden');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function pick(key,val,el){
+  S[key]=val;
+  el.closest('.opts').querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel');
+}
+function syncDown(src){
+  const price=+document.getElementById('price').value||S.price;
+  if(src==='amt'){
+    const a=+document.getElementById('downAmt').value||0;
+    S.downAmt=a; S.downPct=price>0?+(a/price*100).toFixed(1):0;
+    document.getElementById('downPct').value=S.downPct;
+  } else {
+    const p=+document.getElementById('downPct').value||0;
+    S.downPct=p; S.downAmt=Math.round(price*p/100);
+    document.getElementById('downAmt').value=S.downAmt;
+  }
+  const note=document.getElementById('downNote');
+  const pct=S.downPct;
+  if(pct<3.5) note.textContent='⚠️ Below 3.5% — only VA or USDA allow 0% down; FHA needs 3.5%';
+  else if(pct<20) note.textContent='ℹ️ Below 20% — PMI or MIP will be required on most loan types';
+  else note.textContent='✅ 20%+ down — no PMI required on conventional loans';
+}
+
+function creditNum(c){return{excellent:760,good:700,fair:640,low580:595,low500:540,under500:450}[c]||640;}
+function getLoanEligibility(){
+  const price=S.price, down=S.downAmt, pct=S.downPct, loan=price-down;
+  const cred=creditNum(S.credit);
+  const use=S.use, inc=S.income;
+  const res={};
+
+  // Conventional
+  if(cred>=620 && pct>=3){
+    res.conventional = cred>=740&&pct>=20 ? 'best' : 'yes';
+  } else { res.conventional='no'; }
+
+  // FHA — primary only, loan limit
+  if(use==='primary' && loan<=498257){
+    if(cred>=580 && pct>=3.5) res.fha='yes';
+    else if(cred>=500 && pct>=10) res.fha='partial';
+    else res.fha='no';
+  } else { res.fha='no'; }
+
+  // VA — military only
+  res.va = (inc==='military') ? 'yes' : 'no';
+
+  // USDA — rural primary, no jumbo
+  if(use==='primary' && (inc==='rural'||inc==='w2'||inc==='other') && loan<=400000){
+    res.usda = (inc==='rural'&&cred>=640) ? 'yes' : 'partial';
+  } else { res.usda='no'; }
+
+  // DSCR — investment, 680+, 20%+ down
+  if((use==='investment'||inc==='investor') && cred>=680 && pct>=20) res.dscr='yes';
+  else if((use==='investment'||inc==='investor') && cred>=640 && pct>=15) res.dscr='partial';
+  else res.dscr='no';
+
+  // Jumbo — loan > 766550, 700+ credit
+  if(loan>766550){
+    if(cred>=700 && pct>=10) res.jumbo='yes';
+    else if(cred>=680 && pct>=20) res.jumbo='partial';
+    else res.jumbo='no';
+  } else { res.jumbo = loan>600000 ? 'partial' : 'no'; }
+
+  // Bank statement — self-employed
+  if(inc==='selfemployed' && cred>=620 && pct>=10) res.bankstatement='yes';
+  else if(inc==='selfemployed') res.bankstatement='partial';
+  else res.bankstatement='no';
+
+  return res;
+}
+
+function getPMI(pct,cred){
+  // Conventional PMI rate table
+  const ltv=100-pct;
+  if(ltv<=80) return 0;
+  if(ltv<=85){return cred>=740?0.15:cred>=680?0.25:0.40;}
+  if(ltv<=90){return cred>=740?0.45:cred>=680?0.70:1.00;}
+  if(ltv<=95){return cred>=740?0.60:cred>=680?0.90:1.30;}
+  return cred>=740?0.80:cred>=680?1.10:1.50;
+}
+
+function calcPITI(loanType){
+  const price=S.price, down=S.downAmt, pct=S.downPct;
+  let loanAmt=price-down;
+  const rate=+document.getElementById('adjRate').value||LOANS[loanType].rateDefault;
+  const term=+document.getElementById('adjTerm').value||30;
+  const hoa=+document.getElementById('adjHOA').value||0;
+  const taxRate=STATE_TAX[S.state]||1.0;
+  const cred=creditNum(S.credit);
+
+  // Upfront fees added to loan
+  let upfront=0;
+  if(loanType==='fha') upfront=loanAmt*0.0175;
+  if(loanType==='va'){
+    const ff=pct>=10?0.0125:pct>=5?0.015:0.0215;
+    upfront=loanAmt*ff;
+  }
+  if(loanType==='usda') upfront=loanAmt*0.01;
+  loanAmt+=upfront;
+
+  // P&I
+  const mr=rate/100/12, n=term*12;
+  const pi=mr===0?loanAmt/n:loanAmt*(mr*Math.pow(1+mr,n))/(Math.pow(1+mr,n)-1);
+
+  // Tax
+  const tax=price*(taxRate/100)/12;
+
+  // Insurance
+  const insInput=+document.getElementById('adjIns').value;
+  const ins=insInput>0?insInput/12:price*0.005/12;
+
+  // MIP / PMI
+  let mip=0, mipLabel='';
+  if(loanType==='conventional' && pct<20){
+    mip=(price-down)*getPMI(pct,cred)/100/12;
+    mipLabel=`PMI (${getPMI(pct,cred).toFixed(2)}%/yr, drops at 20% equity)`;
+  } else if(loanType==='fha'){
+    mip=(price-down)*0.0055/12;
+    mipLabel='FHA MIP (0.55%/yr annual)';
+  } else if(loanType==='usda'){
+    mip=(price-down)*0.0035/12;
+    mipLabel='USDA Annual Fee (0.35%/yr)';
+  }
+
+  const total=pi+tax+ins+mip+hoa;
+  return {pi,tax,ins,mip,mipLabel,hoa,total,loanAmt,upfront,rate,term};
+}
+
+function renderPITI(){
+  if(!activeLoan) return;
+  const p=calcPITI(activeLoan);
+  const rows=[
+    {l:'Principal & Interest',s:`${+document.getElementById('adjRate').value||LOANS[activeLoan].rateDefault}% · ${+document.getElementById('adjTerm').value||30}yr`,v:p.pi},
+    {l:'Property Tax',s:`${STATE_TAX[S.state]||1.0}% avg rate · ${STATES.find(x=>x[0]===S.state)?.[1]||S.state}`,v:p.tax},
+    {l:"Homeowner's Insurance",s:'~0.5% of home value/yr (est.)',v:p.ins},
+  ];
+  if(p.mip>0) rows.push({l:p.mipLabel||'Mortgage Insurance',s:'',v:p.mip});
+  if(p.hoa>0) rows.push({l:'HOA',s:'Monthly association fee',v:p.hoa});
+
+  document.getElementById('pitiRows').innerHTML=rows.map(r=>`
+    <div class="piti-row">
+      <div class="piti-label">${r.l}<small>${r.s}</small></div>
+      <div class="piti-val">${fmt(r.v)}<span style="font-size:11px;color:#64748b">/mo</span></div>
+    </div>`).join('');
+  document.getElementById('pitiTotal').textContent=fmt(p.total)+'/mo';
+  document.getElementById('pitiTitle').textContent=`📋 ${LOANS[activeLoan].name} — Monthly Payment Breakdown`;
+
+  // Key stats
+  const loanOrig=S.price-S.downAmt;
+  const totalPaid=p.pi*p.term*12;
+  document.getElementById('keyStats').innerHTML=`
+    <div class="rate-card"><div class="rate-num">${fmt(loanOrig)}</div><div class="rate-lbl">Loan Amount</div></div>
+    <div class="rate-card"><div class="rate-num">${fmt(p.total)}</div><div class="rate-lbl">Total Monthly</div></div>
+    <div class="rate-card"><div class="rate-num">${fmt(totalPaid)}</div><div class="rate-lbl">Total Interest+P over ${p.term}yr</div></div>`;
+}
+
+function selectLoan(type){
+  activeLoan=type;
+  document.querySelectorAll('.loan-card').forEach(c=>c.classList.remove('active'));
+  document.querySelector(`[data-loan="${type}"]`)?.classList.add('active');
+  // set default rate for this loan type
+  document.getElementById('adjRate').value=LOANS[type].rateDefault;
+  renderPITI();
+  document.getElementById('pitiCard').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function showResults(){
+  if(!S.credit){alert('Please select your credit score range first.');return;}
+  if(!S.use){alert('Please select how you will use the property.');return;}
+  if(!S.income){alert('Please select your income type.');return;}
+  S.price=+document.getElementById('price').value||400000;
+  S.state=document.getElementById('state').value;
+  S.downAmt=+document.getElementById('downAmt').value||0;
+  S.downPct=S.price>0?S.downAmt/S.price*100:0;
+
+  [1,2,3,4,5].forEach(i=>{
+    document.getElementById('step'+i).classList.add('hidden');
+    const dot=document.getElementById('sd'+i); dot.className='step-dot done'; dot.textContent='✓';
+    if(i<5) document.getElementById('sl'+i).className='step-line done';
+  });
+  document.getElementById('results').classList.remove('hidden');
+
+  const elig=getLoanEligibility();
+  const order=['conventional','fha','va','usda','dscr','jumbo','bankstatement'];
+  const badgeMap={best:'BEST FIT',yes:'ELIGIBLE',partial:'MAY QUALIFY',no:'NOT ELIGIBLE'};
+  const badgeClass={best:'badge-best',yes:'badge-yes',partial:'badge-partial',no:'badge-no'};
+
+  document.getElementById('loanGrid').innerHTML=order.map(type=>{
+    const l=LOANS[type], e=elig[type];
+    return `<div class="loan-card${e==='no'?' no':''}" data-loan="${type}" onclick="${e==='no'?'':(`selectLoan('${type}')`)}" title="${e==='no'?'Not eligible based on your inputs':'Click to see full payment breakdown'}">
+      <span class="loan-badge ${badgeClass[e]}">${badgeMap[e]}</span>
+      <div style="font-size:22px;margin-bottom:6px">${l.emoji}</div>
+      <div class="loan-name">${l.name}</div>
+      <div class="loan-min" style="margin-top:4px">${l.note}</div>
+      ${e!=='no'?`<div style="font-size:11px;color:#4f46e5;font-weight:700;margin-top:8px">Default rate: ${l.rateDefault}% — click for full breakdown →</div>`:''}
+    </div>`;
+  }).join('');
+
+  // Auto-select best eligible loan
+  const best=order.find(t=>elig[t]==='best')||order.find(t=>elig[t]==='yes')||order.find(t=>elig[t]==='partial');
+  if(best) selectLoan(best);
+
+  const eligCount=order.filter(t=>elig[t]!=='no').length;
+  document.getElementById('res-title').textContent=`${eligCount} Loan Type${eligCount!==1?'s':''} Available to You`;
+  document.getElementById('res-sub').textContent=`Based on ${fmt(S.price)} purchase · ${fmt(S.downAmt)} down (${S.downPct.toFixed(1)}%) · ${S.state} property taxes`;
+
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function restart(){
+  activeLoan=null;
+  document.getElementById('results').classList.add('hidden');
+  document.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel'));
+  goStep(1);
+}
+
+// Init
+syncDown('amt');
+</script>
+</body>
+</html>
